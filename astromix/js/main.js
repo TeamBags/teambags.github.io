@@ -3833,8 +3833,8 @@ var Tabs = function () {
   var tabs = $(".js-tab");
   var contentTabs = $(".js-info-tab");
   var progress = $('.js-progress');
-  var animate = false;
   var timeline;
+  var timelineMap;
   return {
     showContent: function showContent() {
       tabs.click(function (e) {
@@ -3844,6 +3844,7 @@ var Tabs = function () {
 
         var target = $(_this.data("target"));
         timeline.kill();
+        timelineMap.kill();
         tabs.removeClass("animate");
         tabs.addClass("hide");
 
@@ -3865,8 +3866,12 @@ var Tabs = function () {
     },
     animateTabsContent: function animateTabsContent() {
       var controller = new ScrollMagic.Controller();
-      timeline = new TimelineMax();
-      timeline.to("#tab1", 0, {
+      timeline = new TimelineMax({
+        repeat: -1
+      });
+      timeline.to("#tab3", 0, {
+        className: "+=hide"
+      }).to("#tab1", 0, {
         className: "-=active"
       }).to("#tab1", 0, {
         className: "+=animate"
@@ -3892,6 +3897,15 @@ var Tabs = function () {
         className: "+=animate"
       }).to("#info3", 0, {
         className: "+=active"
+      }).to("#tab3", 0, {
+        className: "-=hide"
+      }).to("#info3", 0, {
+        className: "-=active",
+        delay: 7
+      }).to("#tab3", 0, {
+        className: "-=animate"
+      }).to("#tab3", 0, {
+        className: "+=hide"
       });
       new ScrollMagic.Scene({
         triggerElement: "#about",
@@ -3900,9 +3914,15 @@ var Tabs = function () {
     },
     animateMapDesc: function animateMapDesc() {
       var controller = new ScrollMagic.Controller();
-      timeline = new TimelineMax();
-      timeline.to(".progress__line", 0, {
-        className: "+=part1"
+      timelineMap = new TimelineMax({
+        repeat: -1
+      });
+      timelineMap.to(".progress__line", 0, {
+        className: "+=animate"
+      }).to("#dot1", 0, {
+        className: "+=active"
+      }).to("#desc1", 0, {
+        className: "+=active"
       }).to('#dot1', 0, {
         className: '-=active',
         delay: 7
@@ -3912,8 +3932,6 @@ var Tabs = function () {
         className: "+=active"
       }).to("#desc2", 0, {
         className: "+=active"
-      }).to(".progress__line", 0, {
-        className: "+=part2"
       }).to('#dot2', 0, {
         className: '-=active',
         delay: 7
@@ -3923,11 +3941,18 @@ var Tabs = function () {
         className: "+=active"
       }).to("#desc3", 0, {
         className: "+=active"
+      }).to("#dot3", 0, {
+        className: "-=active",
+        delay: 7
+      }).to("#desc3", 0, {
+        className: "-=active"
+      }).to(".progress__line", 0, {
+        className: "-=animate"
       });
       new ScrollMagic.Scene({
         triggerElement: "#map",
         reverse: false
-      }).setTween(timeline).addTo(controller);
+      }).setTween(timelineMap).addTo(controller);
     },
     init: function init() {
       Tabs.showContent();
