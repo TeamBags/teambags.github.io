@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tenor+Sans&amp;display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,300i,400,400i,500,500i,600,600i,700,700i&amp;display=swap&amp;subset=cyrillic,cyrillic-ext,greek,latin-ext,vietnamese"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <title>Ваш заказ</title>
+  </head>
+  <body>
+    <div class="menu-mobile" id="js-mobile-menu">
+      <div class="menu-mobile__wrap">
+        <div class="menu-mobile__nav nav"><a class="nav__item js-scroll" href="#about">Астрология</a><a class="nav__item js-scroll" href="#map">Гороскопы</a><a class="nav__item js-scroll" href="#price">Цены</a><a class="nav__item js-scroll" href="#reviews">Отзывы</a><a class="nav__item js-scroll" href="#faq">База знаний</a></div>
+        <div class="menu-mobile__bottom"><a class="menu-mobile__btn btn btn--full js-scroll" href="#price">Получить гороскоп<i class="fico fico-arrowBtn"></i></a><a class="menu-mobile__link title" href="mailto:info@astromix.net">info@astromix.net</a>
+          <ul class="menu-mobile__social social"><a class="social__link" href="#"><i class="fico fico-fb"></i></a><a class="social__link" href="#"><i class="fico fico-tw"></i></a><a class="social__link" href="#"><i class="fico fico-inst"></i></a></ul>
+        </div>
+      </div>
+    </div>
+    <div class="menu">
+      <div class="menu__wrap"><a class="menu__logo logo" href="index.html"><img src="img/svg/logo.svg" alt="Astromix"/></a>
+        <div class="menu__nav nav fzL"><a class="nav__item js-scroll" href="#about">Астрология</a><a class="nav__item js-scroll" href="#map">Гороскопы</a><a class="nav__item js-scroll" href="#price">Цены</a><a class="nav__item js-scroll" href="#reviews">Отзывы</a><a class="nav__item js-scroll" href="#faq">База знаний</a></div>
+        <div class="menu__right"><a class="menu__btn btn btn--empty js-scroll" href="#price">Получить гороскоп<i class="fico fico-arrowBtn"></i></a></div>
+        <div class="burger js-burger" data-target="#js-mobile-menu"><span class="burger__line"></span><span class="burger__line"></span><span class="burger__line"></span></div>
+      </div>
+    </div>
+    <section class="order bg-header"><i class="fico fico-starB fico-starB--1"></i><i class="fico fico-starB fico-starB--2"></i><i class="fico fico-starB fico-starB--3"></i><i class="fico fico-starS fico-starS--1"></i><i class="fico fico-starS fico-starS--2"></i><i class="fico fico-starS fico-starS--3"></i><i class="fico fico-starS fico-starS--4"></i>
+      <div class="container js-hide-content">
+        <h1 class="order__title title title--dark">Ваш заказ</h1>
+        <div class="order__wrap">
+          <div class="order__steps">
+            <div class="order-step active">
+              <div class="order-step__left">
+                <p class="order-step__num title">01</p>
+                <p class="order-step__text">Ваши<br/>данные</p>
+              </div>
+              <div class="order-step__check"><i class="fico fico-checkOrder"></i></div>
+            </div>
+            <div class="order-step not-active">
+              <div class="order-step__left">
+                <p class="order-step__num title">02</p>
+                <p class="order-step__text">Детали заказа<br/> и оплата</p>
+              </div>
+              <div class="order-step__check"><i class="fico fico-checkOrder"></i></div>
+            </div>
+            <div class="order-step not-active">
+              <div class="order-step__left">
+                <p class="order-step__num title">03</p>
+                <p class="order-step__text">Успешный<br/> заказ</p>
+              </div>
+              <div class="order-step__check"><i class="fico fico-checkOrder"></i></div>
+            </div>
+          </div>
+          <div class="order__bottom">
+            <div id="step1">
+              <p class="order__ttl title title--dark fzBig">Введите пожалуйста следующие данные для&nbsp;расчета персонального гороскопа</p>
+              <form class="form order__form" action="/" method="post">
+                <div class="form__wrap-input">
+                  <input class="form__input" type="text" name="name" placeholder="Имя" required="required"/>
+                </div>
+                <div class="form__radio-btns">
+                  <p class="form__text">Ваш пол:</p>
+                  <label class="radio">Мужской
+                    <input class="radio__input" type="radio" checked="checked" name="radio"/><span class="radio__checkmark"></span>
+                  </label>
+                  <label class="radio">Женский
+                    <input class="radio__input" type="radio" name="radio"/><span class="radio__checkmark"></span>
+                  </label>
+                </div>
+                <select class="form__select js-select">
+                  <option>Место рождения</option>
+                </select>
+                <div class="form__line">
+                  <div class="form__left">
+                    <p class="form__text form__text--top">Дата рождения:</p>
+                    <div class="form__wrap">
+                      <select class="form__select form__select--month js-select">
+                        <option>Январь</option>
+                        <option>Февраль</option>
+                        <option>Март</option>
+                        <option>Апрель</option>
+                        <option>Май</option>
+                        <option>Июнь</option>
+                        <option>Июль</option>
+                        <option>Август</option>
+                        <option>Сентябрь</option>
+                        <option>Октябрь</option>
+                        <option>Ноябрь</option>
+                        <option>Декабрь</option>
+                      </select>
+                      <select class="form__select form__select--day js-select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                      </select>
+                      <select class="form__select form__select--year js-select">
+                        <option>1986</option>
+                        <option>1987</option>
+                        <option>1988</option>
+                        <option>1989</option>
+                        <option>1990</option>
+                        <option>1991</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form__right">
+                    <p class="form__text form__text--top">Время:</p>
+                    <div class="form__wrap">
+                      <select class="form__select form__select--day js-select">
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                      </select>
+                      <select class="form__select form__select--day js-select">
+                        <option>00</option>
+                        <option>10</option>
+                        <option>20</option>
+                        <option>30</option>
+                        <option>40</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <p class="form__text form__text--top">На этот email будет отправлен гороскоп(ы)</p>
+                <div class="form__wrap-input">
+                  <input class="form__input" type="email" name="email" placeholder="Email" required="required"/>
+                </div>
+                <div class="form__line form__line--big">
+                  <p class="form__text">Персональный гороскоп будет отправлен вам за выбранный месяц:
+                    <div class="form__wrap">
+                      <select class="form__select form__select--month js-select">
+                        <option>Январь</option>
+                        <option>Февраль</option>
+                        <option>Март</option>
+                        <option>Апрель</option>
+                        <option>Май</option>
+                        <option>Июнь</option>
+                        <option>Июль</option>
+                        <option>Август</option>
+                        <option>Сентябрь</option>
+                        <option>Октябрь</option>
+                        <option>Ноябрь</option>
+                        <option>Декабрь</option>
+                      </select>
+                      <select class="form__select form__select--year js-select">
+                        <option>1986</option>
+                        <option>1987</option>
+                        <option>1988</option>
+                        <option>1989</option>
+                        <option>1990</option>
+                        <option>1991</option>
+                      </select>
+                    </div>
+                  </p>
+                </div>
+                <div class="form__checkbox checkbox">
+                  <label class="checkbox__label">Я согласен на передачу и обработку персональных данных
+                    <input class="checkbox__input" type="checkbox"/><span class="checkbox__checkmark"><i class="fico fico-checkOrder"></i></span>
+                  </label>
+                </div>
+                <button class="btn btn--full form__btn" type="submit">Продолжить<i class="fico fico-arrowBtn"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrap">
+          <div class="footer__left footer__column">
+            <div class="footer__logo"><img src="img/svg/logo.svg" alt="Astromix"/></div>
+            <p class="footer__copyright copyright">Astromix © 2018 – 2020</p>
+            <ul class="footer__social social"><a class="social__link" href="#"><i class="fico fico-fb"></i></a><a class="social__link" href="#"><i class="fico fico-tw"></i></a><a class="social__link" href="#"><i class="fico fico-inst"></i></a></ul>
+          </div>
+          <div class="footer__links links">
+            <div class="links__col"><a class="links__item fzM js-scroll" href="#about">Астрология</a><a class="links__item fzM js-scroll" href="#map">Гороскопы</a><a class="links__item fzM js-scroll" href="#price">Цены</a><a class="links__item fzM js-scroll" href="#reviews">Отзывы</a><a class="links__item fzM js-scroll" href="#faq">База&nbsp;знаний</a></div>
+            <div class="links__col"><a class="links__item fzM" href="term-of-use.html">Пользовательское соглашение</a><a class="links__item fzM" href="privacy-policy.html">Политика конфиденциальности</a><a class="links__item fzM" href="cookies-policy.html">Использование cookies</a></div>
+          </div>
+          <div class="footer__contacts contacts footer__column"><a class="contacts__email title" href="mailto:info@astromix.net">info@astromix.net</a>
+            <p class="contacts__address fzXS fzXS--heightBig">Украина, г. Киев,<br/>ул. Название улицы, 24, офис&nbsp;221</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
