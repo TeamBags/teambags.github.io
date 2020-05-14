@@ -52,12 +52,18 @@
               <div class="order-step__check"><i class="fico fico-checkOrder"></i></div>
             </div>
           </div>
+          <div class="message message--success"><i class="fico fico-check"></i>
+            <p class="message__text">Оплата 15,98 USD прошла успешно! Благодарим Вас за покупку.</p>
+          </div>
+          <div class="message message--error"><i class="fico fico-error"></i>
+            <p class="message__text">Оплата 15,98 USD не прошла! Повторите попытку.</p>
+          </div>
           <div class="order__bottom">
             <div id="step1">
               <p class="order__ttl title title--dark fzBig">Введите пожалуйста следующие данные для&nbsp;расчета персонального гороскопа</p>
               <form class="form order__form" action="/" method="post">
                 <div class="form__wrap-input">
-                  <input class="form__input" type="text" name="name" placeholder="Имя" required="required"/>
+                  <input class="form__input error" type="text" name="name" placeholder="Имя" required="required"/><span class="form__error">Текст ошибки, например введите имя</span>
                 </div>
                 <div class="form__radio-btns">
                   <p class="form__text">Ваш пол:</p>
@@ -68,14 +74,14 @@
                     <input class="radio__input" type="radio" name="radio"/><span class="radio__checkmark"></span>
                   </label>
                 </div>
-                <select class="form__select js-select">
-                  <option>Место рождения</option>
+                <select class="form__select js-select js-select--city">
+                  <option></option>
                 </select>
                 <div class="form__line">
                   <div class="form__left">
                     <p class="form__text form__text--top">Дата рождения:</p>
                     <div class="form__wrap">
-                      <select class="form__select form__select--month js-select">
+                      <select class="form__select form__select--month js-select" name="state">
                         <option>Январь</option>
                         <option>Февраль</option>
                         <option>Март</option>
@@ -96,6 +102,10 @@
                         <option>4</option>
                         <option>5</option>
                         <option>6</option>
+                        <option>6</option>
+                        <option>6</option>
+                        <option>6</option>
+                        <option>6</option>
                       </select>
                       <select class="form__select form__select--year js-select">
                         <option>1986</option>
@@ -103,6 +113,10 @@
                         <option>1988</option>
                         <option>1989</option>
                         <option>1990</option>
+                        <option>1991</option>
+                        <option>1991</option>
+                        <option>1991</option>
+                        <option>1991</option>
                         <option>1991</option>
                       </select>
                     </div>
@@ -116,6 +130,11 @@
                         <option>14</option>
                         <option>15</option>
                         <option>16</option>
+                        <option>16</option>
+                        <option>16</option>
+                        <option>16</option>
+                        <option>16</option>
+                        <option>16</option>
                       </select>
                       <select class="form__select form__select--day js-select">
                         <option>00</option>
@@ -123,13 +142,18 @@
                         <option>20</option>
                         <option>30</option>
                         <option>40</option>
+                        <option>40</option>
+                        <option>40</option>
+                        <option>40</option>
+                        <option>40</option>
+                        <option>40</option>
                       </select>
                     </div>
                   </div>
                 </div>
                 <p class="form__text form__text--top">На этот email будет отправлен гороскоп(ы)</p>
                 <div class="form__wrap-input">
-                  <input class="form__input" type="email" name="email" placeholder="Email" required="required"/>
+                  <input class="form__input error" type="email" name="email" placeholder="Email" required="required"/><span class="form__error">Текст ошибки, например введите корректный email</span>
                 </div>
                 <div class="form__line form__line--big">
                   <p class="form__text">Персональный гороскоп будет отправлен вам за выбранный месяц:
@@ -155,17 +179,104 @@
                         <option>1989</option>
                         <option>1990</option>
                         <option>1991</option>
+                        <option>1991</option>
+                        <option>1991</option>
+                        <option>1991</option>
                       </select>
                     </div>
                   </p>
                 </div>
                 <div class="form__checkbox checkbox">
                   <label class="checkbox__label">Я согласен на передачу и обработку персональных данных
-                    <input class="checkbox__input" type="checkbox"/><span class="checkbox__checkmark"><i class="fico fico-checkOrder"></i></span>
+                    <input class="checkbox__input" type="checkbox" checked="checked"/><span class="checkbox__checkmark"><i class="fico fico-checkOrder"></i></span>
                   </label>
                 </div>
                 <button class="btn btn--full form__btn" type="submit">Продолжить<i class="fico fico-arrowBtn"></i></button>
               </form>
+            </div>
+            <div id="step2">
+              <div class="order__price-info order__row price-info">
+                <div class="price-info__left">
+                  <p class="price-info__text">К оплате</p>
+                  <p class="price-info__type title title--dark">Пакет Популярный</p>
+                </div>
+                <div class="price-info__right">
+                  <p class="price-info__old title">24,99 USD</p>
+                  <p class="price-info__new title">15,98 USD</p>
+                </div>
+              </div>
+              <div class="order__detals order__row">
+                <p class="order__ttl-step2 title title--dark">Ваш заказ:</p>
+                <ul class="list">
+                  <li class="list__item"> <i class="fico fico-check"></i>
+                    <p class="fzM">Натальный гороскоп личности</p>
+                  </li>
+                  <li class="list__item"> <i class="fico fico-check"></i>
+                    <p class="fzM"> Прогноз на месяц <span class="list__date">Июнь 2020</span></p>
+                  </li>
+                  <li class="list__item"><i class="fico fico-check"></i>
+                    <p class="fzM"> Прогноз на 3 года</p>
+                  </li>
+                  <li class="list__item"><i class="fico fico-check"></i>
+                    <p class="fzM"> Бизнес гороскоп</p>
+                  </li>
+                  <li class="list__item"><i class="fico fico-check"></i>
+                    <p class="fzM"> Гороскоп профессий</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="order__email order__row email">
+                <div class="order__wrap-title">
+                  <p class="order__ttl-step2 title title--dark">Будет отправлен на емейл:</p><a class="order__change" href="#">Редактировать</a>
+                </div>
+                <p class="email__text"><i class="fico fico-email"></i><span>email@gmail.com</span></p>
+              </div>
+              <div class="order__data order__row">
+                <div class="order__wrap-title">
+                  <p class="order__ttl-step2 title title--dark">Ваши данные:</p><a class="order__change" href="#">Редактировать</a>
+                </div>
+                <ul class="data">
+                  <li class="data__item">
+                    <p class="data__column1">Имя:</p>
+                    <p class="data__column2">Семен Иванов</p>
+                  </li>
+                  <li class="data__item">
+                    <p class="data__column1">Дата рождения:</p>
+                    <p class="data__column2">10.05.1987</p>
+                  </li>
+                  <li class="data__item">
+                    <p class="data__column1">Время рождения:</p>
+                    <p class="data__column2">12:00</p>
+                  </li>
+                  <li class="data__item">
+                    <p class="data__column1">Место рождения: </p>
+                    <p class="data__column2">Киев, Украина</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="order__payment">
+                <p class="order__ttl-step2 title title--dark">Выберете способ оплаты</p>
+                <div class="order__list-payment">
+                  <div class="payment active"><img class="payment__img" src="img/svg/visa.svg" alt="payment"/></div>
+                  <div class="payment"><img class="payment__img" src="img/svg/privat.svg" alt="payment"/></div>
+                  <div class="payment"><img class="payment__img" src="img/svg/money.svg" alt="payment"/></div>
+                  <div class="payment"><img class="payment__img" src="img/svg/yandex.svg" alt="payment"/></div>
+                  <div class="payment">
+                    <p class="payment__text">Другие платежные системы</p>
+                  </div>
+                </div>
+              </div>
+              <button class="btn btn--full form__btn" type="submit">Оплатить<i class="fico fico-arrowBtn"></i></button>
+            </div>
+            <div id="step3">
+              <div class="order__finish finish success"><img class="finish__img" src="img/svg/yes.svg" alt="success"/>
+                <h5 class="finish__title title title--dark">Благодарим за покупку!</h5>
+                <p class="finish__text">Команда астрологов Astromix уже готовит для Вас гороскоп(ы). Мы отправим материалы на почту email@mail.com в течение часа</p><a class="finish__btn btn btn--empty" href="index.html">На главную<i class="fico fico-arrowBtn"></i></a>
+              </div>
+              <div class="order__finish finish error"><img class="finish__img" src="img/svg/no.svg" alt="error"/>
+                <h5 class="finish__title title title--dark">Оплата не прошла</h5>
+                <p class="finish__text">Попробуйте оплатить еще раз или выберите другой способ оплаты.</p><a class="finish__btn btn btn--full" href="index.html">Выбрать способ оплаты<i class="fico fico-arrowBtn"></i></a>
+              </div>
             </div>
           </div>
         </div>
