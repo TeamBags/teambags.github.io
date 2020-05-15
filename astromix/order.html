@@ -40,7 +40,7 @@
             <div class="order-step not-active">
               <div class="order-step__left">
                 <p class="order-step__num title">02</p>
-                <p class="order-step__text">Детали заказа<br/> и оплата</p>
+                <p class="order-step__text">Детали <span>заказа</span><br/> и оплата</p>
               </div>
               <div class="order-step__check"><i class="fico fico-checkOrder"></i></div>
             </div>
@@ -74,7 +74,7 @@
                     <input class="radio__input" type="radio" name="radio"/><span class="radio__checkmark"></span>
                   </label>
                 </div>
-                <select class="form__select js-select js-select--city">
+                <select class="form__select js-select form__select--max js-select--city" data-placeholder="Место рождения">
                   <option></option>
                 </select>
                 <div class="form__line">
@@ -227,7 +227,7 @@
               </div>
               <div class="order__email order__row email">
                 <div class="order__wrap-title">
-                  <p class="order__ttl-step2 title title--dark">Будет отправлен на емейл:</p><a class="order__change" href="#">Редактировать</a>
+                  <p class="order__ttl-step2 title title--dark">Будет отправлен на&nbsp;емейл:</p><a class="order__change" href="#">Редактировать</a>
                 </div>
                 <p class="email__text"><i class="fico fico-email"></i><span>email@gmail.com</span></p>
               </div>
@@ -262,7 +262,7 @@
                   <div class="payment"><img class="payment__img" src="img/svg/money.svg" alt="payment"/></div>
                   <div class="payment"><img class="payment__img" src="img/svg/yandex.svg" alt="payment"/></div>
                   <div class="payment">
-                    <p class="payment__text">Другие платежные системы</p>
+                    <p class="payment__text">Другие <span>платежные системы</span></p>
                   </div>
                 </div>
               </div>
@@ -271,11 +271,28 @@
             <div id="step3">
               <div class="order__finish finish success"><img class="finish__img" src="img/svg/yes.svg" alt="success"/>
                 <h5 class="finish__title title title--dark">Благодарим за покупку!</h5>
-                <p class="finish__text">Команда астрологов Astromix уже готовит для Вас гороскоп(ы). Мы отправим материалы на почту email@mail.com в течение часа</p><a class="finish__btn btn btn--empty" href="index.html">На главную<i class="fico fico-arrowBtn"></i></a>
+                <p class="finish__text">Команда астрологов Astromix уже готовит для Вас гороскоп(ы). Мы отправим материалы на почту email@mail.com в течение часа</p><a class="finish__btn btn btn--empty title" href="index.html">На главную<i class="fico fico-arrowBtn"></i></a>
               </div>
               <div class="order__finish finish error"><img class="finish__img" src="img/svg/no.svg" alt="error"/>
                 <h5 class="finish__title title title--dark">Оплата не прошла</h5>
                 <p class="finish__text">Попробуйте оплатить еще раз или выберите другой способ оплаты.</p><a class="finish__btn btn btn--full" href="index.html">Выбрать способ оплаты<i class="fico fico-arrowBtn"></i></a>
+              </div>
+            </div>
+            <div class="loader">
+              <div class="loader-content">
+                <div class="loader-sun"></div>
+                <div class="loader-mercure">
+                  <div></div>
+                </div>
+                <div class="loader-venus">
+                  <div></div>
+                </div>
+                <div class="loader-earth">
+                  <div></div>
+                </div>
+                <div class="loader-mars">
+                  <div></div>
+                </div>
               </div>
             </div>
           </div>
