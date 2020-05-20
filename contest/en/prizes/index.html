@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="theme-color" content="#16142d"/>
+    <meta name="description" content="Formula Everad - a new competition from a direct advertiser with its own CPA network. Participate, drive traffic, and win three incredibly charged cars!"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,300i,400,400i,500,500i,600,600i,700,700i&amp;display=swap&amp;subset=cyrillic,cyrillic-ext,greek,latin-ext,vietnamese"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap&amp;subset=cyrillic,cyrillic-ext,latin-ext,vietnamese"/>
+    <link rel="icon" href="/favicon.ico"/>
+    <link rel="stylesheet" href="/css/main.css" media="none" onload="if(media!='all')media='all'"/>
+    <noscript>
+      <link rel="stylesheet" href="/css/main.css"/>
+    </noscript>
+    <script>var EVERlocale = "en"</script>
+    <title>Formula Everad contest. Drive traffic to drive cool car</title>
+    <style>
+      #preloader {
+      	background: #161032;
+      	position: fixed;
+      	display: flex;
+      	align-items: center;
+      	justify-content: center;
+      	left: 0;
+      	bottom: 0;
+      	right: 0;
+      	top: 0;
+      	z-index: 100;
+      	transition: 1s all;
+      	opacity: 1;
+      	visibility: visible;
+      }
+      #preloader.cansel {
+      	opacity: 0;
+      	visibility: hidden;
+      }
+      #loader {
+      	display: block;
+      	width: 150px;
+      	height: 150px;
+      	border-radius: 50%;
+      	border: 3px solid transparent;
+      	border-top-color: #9370DB;
+      	-webkit-animation: spin 2s linear infinite;
+      	animation: spin 2s linear infinite;
+      }
+      #loader:before {
+      	content: "";
+      	position: absolute;
+      	top: 5px;
+      	left: 5px;
+      	right: 5px;
+      	bottom: 5px;
+      	border-radius: 50%;
+      	border: 3px solid transparent;
+      	border-top-color: #BA55D3;
+      	-webkit-animation: spin 3s linear infinite;
+      	animation: spin 3s linear infinite;
+      }
+      #loader:after {
+      	content: "";
+      	position: absolute;
+      	top: 15px;
+      	left: 15px;
+      	right: 15px;
+      	bottom: 15px;
+      	border-radius: 50%;
+      	border: 3px solid transparent;
+      	border-top-color: #FF00FF;
+      	-webkit-animation: spin 1.5s linear infinite;
+      	animation: spin 1.5s linear infinite;
+      }
+      @-webkit-keyframes spin {
+      	0%   {
+      		-webkit-transform: rotate(0deg);
+      		-ms-transform: rotate(0deg);
+      		transform: rotate(0deg);
+      	}
+      	100% {
+      		-webkit-transform: rotate(360deg);
+      		-ms-transform: rotate(360deg);
+      		transform: rotate(360deg);
+      	}
+      }
+      @keyframes spin {
+      	0%   {
+      		-webkit-transform: rotate(0deg);
+      		-ms-transform: rotate(0deg);
+      		transform: rotate(0deg);
+      	}
+      	100% {
+      		-webkit-transform: rotate(360deg);
+      		-ms-transform: rotate(360deg);
+      		transform: rotate(360deg);
+      	}
+      }
+    </style>
+  </head>
+  <body>
+    <div class="overlay js-overlay"></div>
+    <div id="preloader">
+      <div id="loader"></div>
+    </div>
+        <div class="top">
+          <div class="top__content"><a class="logo top__logo" href="/en/"><img class="logo__img" src="/img/svg/logo.svg" alt="everad"/></a>
+            <nav class="menu top__menu"><a class="menu__link menu__link--home" href="/en/info">3 races</a><a class="menu__link menu__link--rules" href="/en/steps">About the contest</a><a class="menu__link" href="/en/prizes">Prizes</a><a class="menu__link" href="/en/leaderboard">Leaderboard</a><a class="menu__link" href="/en/coefficient">Rates</a><a class="menu__link menu__link--rules" href="/en/rules">Terms</a></nav>
+            <div class="language top__language"><a class="language__text" href="/prizes">English</a>
+              <div class="language__icons"><a class="language__item" href="/en/prizes"><img class="language__ico" src="/img/svg/en.svg" alt="en"/></a><a class="language__item" href="/prizes"><img class="language__ico" src="/img/svg/ru.svg" alt="ru"/></a></div>
+            </div>
+            <div class="burger js-burger" data-target="#js-mobile-menu"><span class="burger__line"></span><span class="burger__line"></span><span class="burger__line"></span></div>
+                <div class="menu-mobile" id="js-mobile-menu">
+                  <div class="menu-mobile__wrap">
+                    <div class="menu-mobile__top"><a class="logo top__logo" href="/en/"><img class="logo__img" src="/img/svg/logo.svg" alt="everad"/></a>
+                      <div class="menu-mobile__right">
+                        <div class="language menu-mobile__language"><a class="language__text" href="/prizes">English</a>
+                          <div class="language__icons"><a class="language__item" href="/en/prizes"><img class="language__ico" src="/img/svg/en.svg" alt="en"/></a><a class="language__item" href="/prizes"><img class="language__ico" src="/img/svg/ru.svg" alt="ru"/></a></div>
+                        </div>
+                        <div class="burger js-burger" data-target="#js-mobile-menu"><span class="burger__line"></span><span class="burger__line"></span><span class="burger__line"></span></div>
+                      </div>
+                    </div>
+                    <nav class="menu menu-mobile__menu"><a class="menu__link menu__link--home" href="/en/info">3 races</a><a class="menu__link menu__link--rules" href="/en/steps">About the contest</a><a class="menu__link" href="/en/prizes">Prizes</a><a class="menu__link" href="/en/leaderboard">Leaderboard</a><a class="menu__link" href="/en/coefficient">Rates</a><a class="menu__link menu__link--rules" href="/en/rules">Terms</a></nav>
+                    <div class="menu-mobile__bottom"><a class="btn menu-mobile__btn" href="/en/prizes"><span class="btn__text">Take part</span><i class="fico fico-arrow"></i></a>
+                      <ul class="menu-mobile__socials"><a class="social" href="https://t.me/everad_ru" target="_blank"><i class="fico fico-tel"></i></a><a class="social" href="https://www.facebook.com/everadgroup" target="_blank"><i class="fico fico-fb"></i></a><a class="social" href="https://twitter.com/everadgroup" target="_blank"><i class="fico fico-tw"></i></a><a class="social" href="https://vk.com/everad" target="_blank"><i class="fico fico-vk"></i></a><a class="social" href="https://www.instagram.com/everad_group" target="_blank"><i class="fico fico-inst"></i></a>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div>
+    <section class="prizes">
+      <div class="container"><img class="prizes__title lazyload" data-src="/img/svg/formula-en.svg" alt="EVERAD"/>
+        <div class="prizes__content">
+              <div class="prize">
+                <div class="prize__content">
+                  <div class="prize__top">
+                    <div class="prize__car-img">
+                      <picture>
+                        <source class="prize__car" srcset="/img/bmw-s.webp" type="image/webp"/><img class="prize__car lazyload" data-src="/img/bmw-s.png" alt="car"/>
+                      </picture>
+                    </div>
+                    <div class="prize__info">
+                      <div class="prize__progress prize__progress--active">
+                        <p class="prize__text">IN PROGRESS</p>
+                      </div>
+                      <h4 class="prize__title">RACE #1 <span class="pink-c">TOP 200</span></h4>
+                    </div>
+                  </div>
+                  <div class="prize__bottom">
+                    <div class="prize__plus"><span class="pink-c">+</span></div>
+                    <div class="prize__list">
+                      <div class="prize__item prize__item--pods">
+                        <div class="prize__img-wrap"><img class="prize__img lazyload" data-src="/img/apple_air_pods.png" alt="Apple&lt;br&gt; Air&amp;nbsp;Pods"/></div>
+                        <div class="prize__desc">
+                          <p class="prize__name">Apple<br> Air&nbsp;Pods</p>
+                        </div>
+                      </div>
+                      <div class="prize__item prize__item--pod">
+                        <div class="prize__img-wrap"><img class="prize__img lazyload" data-src="/img/apple_home_pod.png" alt="Apple&lt;br&gt; Home&amp;nbsp;Pod"/></div>
+                        <div class="prize__desc">
+                          <p class="prize__name">Apple<br> Home&nbsp;Pod</p>
+                        </div>
+                      </div>
+                      <div class="prize__item prize__item--watch">
+                        <div class="prize__img-wrap"><img class="prize__img lazyload" data-src="/img/apple_watch.png" alt="APPLE&lt;br&gt; watch"/></div>
+                        <div class="prize__desc">
+                          <p class="prize__name">APPLE<br> watch</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="prize">
+                <div class="prize__content">
+                  <div class="prize__top">
+                    <div class="prize__car-img">
+                      <picture>
+                        <source class="prize__car" srcset="/img/audi-s.webp" type="image/webp"/><img class="prize__car lazyload" data-src="/img/audi-s.png" alt="car"/>
+                      </picture>
+                    </div>
+                    <div class="prize__info">
+                      <div class="prize__progress prize__progress--no-active">
+                        <p class="prize__text">Coming soon</p>
+                      </div>
+                      <h4 class="prize__title">RACE #2 <span class="pink-c">TOP 100</span></h4>
+                    </div>
+                  </div>
+                  <div class="prize__bottom">
+                    <div class="prize__plus"><span class="pink-c">+</span></div>
+                    <div class="prize__list">
+                      <div class="prize__item prize__item--pods">
+                        <div class="prize__img-wrap"><img class="prize__img lazyload" data-src="/img/apple_air_pods.png" alt="Apple&lt;br&gt; Air&amp;nbsp;Pods"/></div>
+                        <div class="prize__desc">
+                          <p class="prize__name">Apple<br> Air&nbsp;Pods</p>
+                        </div>
+                      </div>
+                      <div class="prize__item prize__item--iphone">
+                        <div class="prize__img-wrap"><img class="prize__img lazyload" data-src="/img/apple_iphone.png" alt="Apple&lt;br&gt; Iphone"/></div>
+                        <div class="prize__desc">
+                          <p class="prize__name">Apple<br> Iphone</p>
+                        </div>
+                      </div>
+                      <div class="prize__item prize__item--watch">
+                        <div class="prize__img-wrap"><img class="prize__img lazyload" data-src="/img/apple_watch.png" alt="APPLE&lt;br&gt; watch"/></div>
+                        <div class="prize__desc">
+                          <p class="prize__name">APPLE<br> watch</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="prize">
+                <div class="prize__content">
+                  <div class="prize__top">
+                    <div class="prize__car-img">
+                      <picture>
+                        <source class="prize__car" srcset="/img/range-s.webp" type="image/webp"/><img class="prize__car lazyload" data-src="/img/range-s.png" alt="car"/>
+                      </picture>
+                    </div>
+                    <div class="prize__info">
+                      <div class="prize__progress prize__progress--no-active">
+                        <p class="prize__text">Coming soon</p>
+                      </div>
+                      <h4 class="prize__title">RACE #3 <span class="pink-c">TOP 50</span></h4>
+                    </div>
+                  </div>
+                  <div class="prize__bottom">
+                    <div class="prize__garant">
+                      <div class="prize__item prize__item--omega">
+                        <div class="prize__img-wrap"><img class="prize__img lazyload" data-src="/img/omega.png" alt="Omega&amp;nbsp;De&lt;br&gt; Ville&amp;nbsp;Hour&lt;br&gt; Vision"/></div>
+                        <div class="prize__desc">
+                          <p class="prize__name">Omega&nbsp;De<br> Ville&nbsp;Hour<br> Vision</p>
+                          <p class="prize__note pink-c">GUARANTEED&nbsp;Prize</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="prize__plus"><span class="pink-c">+</span></div>
+                    <div class="prize__list">
+                      <div class="prize__item prize__item--macbook">
+                        <div class="prize__img-wrap"><img class="prize__img lazyload" data-src="/img/apple_macbook.png" alt="Apple&lt;br&gt; macbook"/></div>
+                        <div class="prize__desc">
+                          <p class="prize__name">Apple<br> macbook</p>
+                        </div>
+                      </div>
+                      <div class="prize__item prize__item--iphone">
+                        <div class="prize__img-wrap"><img class="prize__img lazyload" data-src="/img/apple_iphone.png" alt="Apple&lt;br&gt; Iphone"/></div>
+                        <div class="prize__desc">
+                          <p class="prize__name">Apple<br> Iphone</p>
+                        </div>
+                      </div>
+                      <div class="prize__item prize__item--watch">
+                        <div class="prize__img-wrap"><img class="prize__img lazyload" data-src="/img/apple_watch.png" alt="APPLE&lt;br&gt; watch"/></div>
+                        <div class="prize__desc">
+                          <p class="prize__name">APPLE<br> watch</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div><a class="btn promo__btn" href="/en/registration"><span class="btn__text">Take part</span><i class="fico fico-arrow"></i></a>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__content">
+        <div class="footer__copyright copyright"><img class="copyright__img" src="/img/svg/everad.svg" alt="logo"/>
+          <p class="copyright__text">© Everad 2020</p><a class="footer__link footer__link--mob" href="/en/rules">Participation rules</a>
+        </div>
+        <div class="footer__center"><a class="footer__link footer__link--desc" href="/en/rules">Participation rules</a>
+          <div class="footer__contacts"><a class="contact" href="mailto:support@everad.com"><i class="fico fico-email"></i>
+              <p class="contact__text">support@everad.com</p></a><a class="contact" href="skype:supporteverad?call"><i class="fico fico-skype"></i>
+              <p class="contact__text">supporteverad</p></a><a class="contact" href="https://telegram.me/Everad_Support"><i class="fico fico-telegram"></i>
+              <p class="contact__text">@Everad_Support</p></a></div>
+        </div>
+        <div class="footer__socials"><a class="social" href="https://t.me/everad_ru" target="_blank"><i class="fico fico-tel"></i></a><a class="social" href="https://www.facebook.com/everadgroup" target="_blank"><i class="fico fico-fb"></i></a><a class="social" href="https://twitter.com/everadgroup" target="_blank"><i class="fico fico-tw"></i></a><a class="social" href="https://vk.com/everad" target="_blank"><i class="fico fico-vk"></i></a><a class="social" href="https://www.instagram.com/everad_group" target="_blank"><i class="fico fico-inst"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script async="async" src="/js/lazysizes.min.js"></script>
+    <script async="async" src="/js/modernizr-custom.js"></script>
+    <script async="async" src="/js/main.js"></script>
+  </body>
+</html>
