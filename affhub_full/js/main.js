@@ -1189,6 +1189,122 @@
 	  };
 	}();
 
+	var dataRaiting = [{
+	  player: "-",
+	  hubs: "-"
+	}, {
+	  player: "-",
+	  hubs: "-"
+	}, {
+	  player: "-",
+	  hubs: "-"
+	}, {
+	  player: "-",
+	  hubs: "-"
+	}, {
+	  player: "-",
+	  hubs: "-"
+	}, {
+	  player: "-",
+	  hubs: "-"
+	}, {
+	  player: "-",
+	  hubs: "-"
+	}, {
+	  player: "-",
+	  hubs: "-"
+	}, {
+	  player: "-",
+	  hubs: "-"
+	}, {
+	  player: "-",
+	  hubs: "-"
+	}, {
+	  player: "-",
+	  hubs: "-"
+	}, {
+	  player: "-",
+	  hubs: "-"
+	}, {
+	  player: "-",
+	  hubs: "-"
+	}, {
+	  player: "-",
+	  hubs: "-"
+	}, {
+	  player: "-",
+	  hubs: "-"
+	}, {
+	  player: "-",
+	  hubs: "-"
+	}, {
+	  player: "-",
+	  hubs: "-"
+	}, {
+	  player: "-",
+	  hubs: "-"
+	}, {
+	  player: "-",
+	  hubs: "-"
+	}, {
+	  player: "-",
+	  hubs: "-"
+	}, {
+	  player: "-",
+	  hubs: "-"
+	}, {
+	  player: "-",
+	  hubs: "-"
+	}, {
+	  player: "-",
+	  hubs: "-"
+	}, {
+	  player: "-",
+	  hubs: "-"
+	}, {
+	  player: "-",
+	  hubs: "-"
+	}, {
+	  player: "-",
+	  hubs: "-"
+	}, {
+	  player: "-",
+	  hubs: "-"
+	}, {
+	  player: "-",
+	  hubs: "-"
+	}, {
+	  player: "-",
+	  hubs: "-"
+	}, {
+	  player: "-",
+	  hubs: "-"
+	}];
+
+	var Raiting = function () {
+
+	  var tableraiting = $(".js-raiting-table");
+	  return {
+	    createTableRaiting: function createTableRaiting(data) {
+	      var html = "";
+
+	      for (var j = 0; j < data.length; j++) {
+	        var item = data[j];
+
+	        if (item) {
+	          var row = "<div class=\"list-r__item\"><p class=\"table__th table__th--s\">".concat(j + 1, "</p><p class=\"table__th table__th--l\">").concat(item.player, "</p><p class=\"table__th table__th--m\">").concat(item.hubs, "</p></div>");
+	          html += row;
+	        }
+	      }
+
+	      tableraiting.html(html);
+	    },
+	    init: function init() {
+	      Raiting.createTableRaiting(dataRaiting);
+	    }
+	  };
+	}();
+
 	$(document).ready(function () {
 	  Menu.init();
 	  Sliders.init();
@@ -1196,6 +1312,7 @@
 	  Gallery.init();
 	  Timer.init();
 	  Events.init();
+	  Raiting.init();
 	});
 
 	document.body.onload = function () {
