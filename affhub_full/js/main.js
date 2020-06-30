@@ -1190,50 +1190,50 @@
 	}();
 
 	var dataRaiting = [{
-	  player: "-",
-	  hubs: "-"
+	  player: "milana_malina",
+	  hubs: "40"
 	}, {
-	  player: "-",
-	  hubs: "-"
+	  player: "oblakov_cpa",
+	  hubs: "40"
 	}, {
-	  player: "-",
-	  hubs: "-"
+	  player: "dimokru",
+	  hubs: "25"
 	}, {
-	  player: "-",
-	  hubs: "-"
+	  player: "dzyaaa",
+	  hubs: "25"
 	}, {
-	  player: "-",
-	  hubs: "-"
+	  player: "ititao",
+	  hubs: "25"
 	}, {
-	  player: "-",
-	  hubs: "-"
+	  player: "pridorozhko",
+	  hubs: "25"
 	}, {
-	  player: "-",
-	  hubs: "-"
+	  player: "tukismim",
+	  hubs: "25"
 	}, {
-	  player: "-",
-	  hubs: "-"
+	  player: "jvictorivna",
+	  hubs: "20"
 	}, {
-	  player: "-",
-	  hubs: "-"
+	  player: "andrew_sk",
+	  hubs: "15"
 	}, {
-	  player: "-",
-	  hubs: "-"
+	  player: "Ariomit",
+	  hubs: "15"
 	}, {
-	  player: "-",
-	  hubs: "-"
+	  player: "Sharenna1",
+	  hubs: "15"
 	}, {
-	  player: "-",
-	  hubs: "-"
+	  player: "xkmrdx",
+	  hubs: "10"
 	}, {
-	  player: "-",
-	  hubs: "-"
+	  player: "helga_las",
+	  hubs: "10"
 	}, {
-	  player: "-",
-	  hubs: "-"
+	  player: "inna_babich",
+	  hubs: "10"
 	}, {
-	  player: "-",
-	  hubs: "-"
+	  player: "konst.shatan1981t",
+	  hubs: "10"
 	}, {
 	  player: "-",
 	  hubs: "-"
