@@ -1229,11 +1229,11 @@
 	  player: "helga_las",
 	  hubs: "10"
 	}, {
-	  player: "inna_babich",
-	  hubs: "10"
-	}, {
 	  player: "konst.shatan1981t",
 	  hubs: "10"
+	}, {
+	  player: "-",
+	  hubs: "-"
 	}, {
 	  player: "-",
 	  hubs: "-"

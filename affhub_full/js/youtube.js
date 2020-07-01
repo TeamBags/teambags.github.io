@@ -18,6 +18,7 @@ function youtubeShowVideo() {
           this.id +
           "?autoplay=1&autohide=1&border=0&wmode=opaque&enablejsapi=1"
       );
+      a.setAttribute('allow', 'autoplay');
       a.style.width = this.style.width;
       a.style.height = this.style.height;
       this.parentNode.replaceChild(a, this);
