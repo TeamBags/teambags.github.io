@@ -1232,8 +1232,8 @@
 	  player: "konst.shatan1981t",
 	  hubs: "10"
 	}, {
-	  player: "-",
-	  hubs: "-"
+	  player: "feuer81",
+	  hubs: "10"
 	}, {
 	  player: "-",
 	  hubs: "-"
