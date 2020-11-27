@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <script>!function(e,n,A){function o(e,n){return typeof e===n}function t(){var e,n,A,t,a,i,l;for(var f in r)if(r.hasOwnProperty(f)){if(e=[],n=r[f],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(A=0;A<n.options.aliases.length;A++)e.push(n.options.aliases[A].toLowerCase());for(t=o(n.fn,"function")?n.fn():n.fn,a=0;a<e.length;a++)i=e[a],l=i.split("."),1===l.length?Modernizr[l[0]]=t:(!Modernizr[l[0]]||Modernizr[l[0]]instanceof Boolean||(Modernizr[l[0]]=new Boolean(Modernizr[l[0]])),Modernizr[l[0]][l[1]]=t),s.push((t?"":"no-")+l.join("-"))}}function a(e){var n=u.className,A=Modernizr._config.classPrefix||"";if(c&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\\s)"+A+"no-js(\\s|$)");n=n.replace(o,"$1"+A+"js$2")}Modernizr._config.enableClasses&&(n+=" "+A+e.join(" "+A),c?u.className.baseVal=n:u.className=n)}function i(e,n){if("object"==typeof e)for(var A in e)f(e,A)&&i(A,e[A]);else{e=e.toLowerCase();var o=e.split("."),t=Modernizr[o[0]];if(2==o.length&&(t=t[o[1]]),"undefined"!=typeof t)return Modernizr;n="function"==typeof n?n():n,1==o.length?Modernizr[o[0]]=n:(!Modernizr[o[0]]||Modernizr[o[0]]instanceof Boolean||(Modernizr[o[0]]=new Boolean(Modernizr[o[0]])),Modernizr[o[0]][o[1]]=n),a([(n&&0!=n?"":"no-")+o.join("-")]),Modernizr._trigger(e,n)}return Modernizr}var s=[],r=[],l={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var A=this;setTimeout(function(){n(A[e])},0)},addTest:function(e,n,A){r.push({name:e,fn:n,options:A})},addAsyncTest:function(e){r.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=l,Modernizr=new Modernizr;var f,u=n.documentElement,c="svg"===u.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;f=o(e,"undefined")||o(e.call,"undefined")?function(e,n){return n in e&&o(e.constructor.prototype[n],"undefined")}:function(n,A){return e.call(n,A)}}(),l._l={},l.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},l._trigger=function(e,n){if(this._l[e]){var A=this._l[e];setTimeout(function(){var e,o;for(e=0;e<A.length;e++)(o=A[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){l.addTest=i}),Modernizr.addAsyncTest(function(){function e(e,n,A){function o(n){var o=n&&"load"===n.type?1==t.width:!1,a="webp"===e;i(e,a&&o?new Boolean(o):o),A&&A(n)}var t=new Image;t.onerror=o,t.onload=o,t.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],A=n.shift();e(A.name,A.uri,function(A){if(A&&"load"===A.type)for(var o=0;o<n.length;o++)e(n[o].name,n[o].uri)})}),t(),a(s),delete l.addTest,delete l.addAsyncTest;for(var p=0;p<Modernizr._q.length;p++)Modernizr._q[p]();e.Modernizr=Modernizr}(window,document);</script>
+    <title>Astromix</title>
+  </head>
+  <body>
+    <div class="menu-mobile" id="js-mobile-menu">
+      <div class="menu-mobile__wrap">
+        <div class="menu-mobile__nav nav"><a class="nav__item js-scroll" href="result.html#result" data-target="#result">Гороскоп совместимости</a><a class="nav__item js-scroll" href="result.html#materials" data-target="#materials">Что вы получаете?</a><a class="nav__item js-scroll" href="#reviews">Отзывы</a></div>
+        <div class="menu-mobile__bottom"><a class="menu-mobile__btn btn btn--full js-scroll" href="#">Получить гороскоп<i class="fico fico-arrowBtn"></i></a><a class="menu-mobile__link title" href="mailto:info@astromix.net">info@astromix.net</a></div>
+      </div>
+    </div>
+    <div class="menu js-fixed-menu">
+      <div class="menu__container">
+        <div class="menu__wrap"><a class="menu__logo logo" href="index.html"><img src="img/svg/logo.svg" alt="Astromix"/></a>
+          <div class="menu__nav nav"><a class="nav__item js-scroll" href="result.html#result" data-target="#result">Гороскоп совместимости</a><a class="nav__item js-scroll" href="result.html#materials" data-target="#materials">Что вы получаете?</a><a class="nav__item js-scroll" href="#reviews">Отзывы</a></div>
+          <div class="menu__right"><a class="menu__btn btn js-scroll" href="#form">Получить гороскоп<i class="fico fico-arrowBtn"></i></a></div>
+          <div class="burger js-burger" data-target="#js-mobile-menu"><span class="burger__line"></span><span class="burger__line"></span><span class="burger__line"></span></div>
+        </div>
+      </div>
+    </div>
+    <header class="analysis">
+      <div class="container">
+        <h1 class="analysis__title title title--main">Результаты анализа совместимости</h1>
+        <div class="analysis__wrap wrapper">
+          <h2 class="analysis__ttl title fzBig">Анализируем совместимость партнёров</h2>
+          <p class="analysis__desc">И выявляем проблемные области</p>
+          <div class="analysis__percent title"> <span>100%</span>
+            <div class="fico fico-check"></div>
+          </div>
+          <ul class="analysis__list list-a">
+            <li class="list-a__item">
+              <div class="fico fico-check"></div>
+              <p class="list-a__text">Составление натальной карты <span>Тристам</span></p>
+            </li>
+            <li class="list-a__item">
+              <div class="fico fico-check"></div>
+              <p class="list-a__text">Составление натальной карты <span>Изольда</span></p>
+            </li>
+            <li class="list-a__item">
+              <div class="fico fico-check"></div>
+              <p class="list-a__text">Расчет совместимости пары по натальным картам</p>
+            </li>
+            <li class="list-a__item">
+              <div class="fico fico-check"></div>
+              <p class="list-a__text">Дианостика проблем устойчивости пары</p>
+            </li>
+            <li class="list-a__item">
+              <div class="fico fico-check"></div>
+              <p class="list-a__text">Анализ критерия: Сексуальность</p>
+            </li>
+            <li class="list-a__item">
+              <div class="fico fico-check"></div>
+              <p class="list-a__text">Анализ критерия: Психологичность</p>
+            </li>
+            <li class="list-a__item">
+              <div class="fico fico-check"></div>
+              <p class="list-a__text">Анализ критерия: Конфликт­ность</p>
+            </li>
+            <li class="list-a__item">
+              <div class="fico fico-check"></div>
+              <p class="list-a__text">Анализ критерия: Печать Несчастья</p>
+            </li>
+          </ul>
+          <p class="analysis__main title">Внимание! У вашей пары неожиданный результат</p>
+        </div>
+      </div>
+    </header>
+    <div class="planets">
+      <div class="planets__wrap"><img class="planets__photo" src="img/svg/planet1.svg" alt="planet"/></div>
+      <div class="planets__wrap"><img class="planets__photo" src="img/svg/planet2.svg" alt="planet"/></div>
+      <div class="planets__wrap"><img class="planets__photo" src="img/svg/planet3.svg" alt="planet"/></div>
+      <div class="planets__wrap"><img class="planets__photo" src="img/svg/planet4.svg" alt="planet"/></div>
+      <div class="planets__wrap"><img class="planets__photo" src="img/svg/planet5.svg" alt="planet"/></div>
+      <div class="planets__wrap"><img class="planets__photo" src="img/svg/planet6.svg" alt="planet"/></div>
+      <div class="planets__wrap"><img class="planets__photo" src="img/svg/planet7.svg" alt="planet"/></div>
+      <div class="planets__wrap"><img class="planets__photo" src="img/svg/planet8.svg" alt="planet"/></div>
+      <div class="planets__wrap"><img class="planets__photo" src="img/svg/planet9.svg" alt="planet"/></div>
+    </div>
+    <section class="result" id="result">
+      <div class="container">
+        <h2 class="result__title title fzM">Астрологический искусственный интелект выявил 9&nbsp;сфер,<br/> которые требуют срочного вмешательства</h2>
+        <div class="result__wrap">
+              <div class="point"><i class="fico fico-point_1"></i>
+                <p class="point__text title">Какова вероятность измены? </p>
+                <p class="point__result point__result--red">Есть риск</p>
+                <p class="point__result point__result--green">-</p>
+              </div>
+              <div class="point"><i class="fico fico-point_2"></i>
+                <p class="point__text title">Принесет ли счастье брак с этим партнером? </p>
+                <p class="point__result point__result--red">Есть риск</p>
+                <p class="point__result point__result--green">-</p>
+              </div>
+              <div class="point"><i class="fico fico-point_3"></i>
+                <p class="point__text title">Будет ли партнер сексуально удовлетворять Вас?</p>
+                <p class="point__result point__result--red">Есть риск</p>
+                <p class="point__result point__result--green">-</p>
+              </div>
+              <div class="point"><i class="fico fico-point_4"></i>
+                <p class="point__text title">Сделает ли партнер вас счастливой?</p>
+                <p class="point__result point__result--red">Есть риск</p>
+                <p class="point__result point__result--green">-</p>
+              </div>
+              <div class="point"><i class="fico fico-point_5"></i>
+                <p class="point__text title">Какова вероятность расставания в паре?</p>
+                <p class="point__result point__result--red">Есть риск</p>
+                <p class="point__result point__result--green">-</p>
+              </div>
+              <div class="point"><i class="fico fico-point_6"></i>
+                <p class="point__text title">Возможны ли серьезные конфликты с печальными последствиями</p>
+                <p class="point__result point__result--red">Есть риск</p>
+                <p class="point__result point__result--green">-</p>
+              </div>
+              <div class="point"><i class="fico fico-point_7"></i>
+                <p class="point__text title">Будет ли партнер  уделять вам достаточно внимание?</p>
+                <p class="point__result point__result--red">Есть риск</p>
+                <p class="point__result point__result--green">-</p>
+              </div>
+              <div class="point"><i class="fico fico-point_8"></i>
+                <p class="point__text title">Кармические ли это отношения?</p>
+                <p class="point__result point__result--red">Есть риск</p>
+                <p class="point__result point__result--green">-</p>
+              </div>
+              <div class="point"><i class="fico fico-point_9"></i>
+                <p class="point__text title">Можете ли вы поменять ситуацию в лучшую сторону?</p>
+                <p class="point__result point__result--red">Есть риск</p>
+                <p class="point__result point__result--green">Да, с вероятностью 95%</p>
+              </div>
+        </div>
+        <p class="result__text title">У вас есть возможность это исправить</p>
+        <div class="result__tree tree"><img class="tree__img" src="img/svg/tree.svg" alt="tree"/></div>
+        <div class="result__inform inform">
+          <p class="inform__ttl title result__col">Это предварительный анализ, у вас есть возможность исправить ситуацию</p>
+          <p class="inform__desc result__col">Астрология не показывает будущее. Она даёт знания, которые помогут его изменить. Подробный синастрический и натальный анализ расскажет, как взаимодействуют ваши небесные тела и что нужно сделать, чтобы добиться гармонии.</p>
+          <div class="inform__wrap"><img class="inform__ico" src="img/svg/inform_ico.svg" alt=""/>
+            <p class="inform__text">Наш Астрологический Искусственный Интеллект составляет любовный анализ  с&nbsp;точностью 98%.</p>
+          </div>
+        </div>
+        <p class="result__main title">Ваш полный отчёт о совместимости уже подготовлен.<br/> Заберите его прямо сейчас!</p><a class="result__btn btn js-scroll title" href="#form">Получить гороскоп<i class="fico fico-arrowBtn"></i></a>
+      </div>
+    </section>
+    <section class="stars">
+      <div class="container">
+        <h2 class="stars__title title fzM">Звёздные пары, которые<br/> заключили союз при участии астролога</h2>
+        <div class="stars__slider js-astrologers-slider">
+              <div class="star">
+                <div class="star__wrap-photo"><img src="img/star_1.png" alt="Дэвид Бэкхем&lt;br&gt; и Виктория Бэкхем"/></div>
+                <div class="star__info">
+                  <p class="star__name title">Дэвид Бэкхем<br> и Виктория Бэкхем</p>
+                  <p class="star__text">Звездная пара является для многих примером идеальной семьи. Между ними сложился такой прочный союз, вряд ли обстоятельства способны его разорвать. </p>
+                </div>
+                <div class="star__bottom">
+                  <div class="star__zodiac zodiac"><i class="fico fico-deva"></i>
+                    <p class="zodiac__name">Дева</p>
+                  </div><span class="star__plus">+</span>
+                  <div class="star__zodiac zodiac"><i class="fico fico-deva"></i>
+                    <p class="zodiac__name">Дева</p>
+                  </div>
+                </div>
+              </div>
+              <div class="star">
+                <div class="star__wrap-photo"><img src="img/star_2.png" alt="Меган Маркл&lt;br&gt; и принц Гарри"/></div>
+                <div class="star__info">
+                  <p class="star__name title">Меган Маркл<br> и принц Гарри</p>
+                  <p class="star__text">Хотя Меган Маркл и принц Гарри женаты с мая 2018 года и в настоящее время являются счастливыми родителями сына, их любовь удивит любого специалиста в области астрологии. </p>
+                </div>
+                <div class="star__bottom">
+                  <div class="star__zodiac zodiac"><i class="fico fico-deva"></i>
+                    <p class="zodiac__name">Дева</p>
+                  </div><span class="star__plus">+</span>
+                  <div class="star__zodiac zodiac"><i class="fico fico-deva"></i>
+                    <p class="zodiac__name">Дева</p>
+                  </div>
+                </div>
+              </div>
+              <div class="star">
+                <div class="star__wrap-photo"><img src="img/star_3.png" alt="Софи Тернер&lt;br&gt; и Джо Джонас"/></div>
+                <div class="star__info">
+                  <p class="star__name title">Софи Тернер<br> и Джо Джонас</p>
+                  <p class="star__text">Вряд ли кто-то будет оспаривать, что Софи Тернер и Джо Джонас просто созданы друг для друга. Несмотря на полное отсутствие астрологической несовместимости партнеры живут душа в душу и продолжают быть счастливыми.</p>
+                </div>
+                <div class="star__bottom">
+                  <div class="star__zodiac zodiac"><i class="fico fico-deva"></i>
+                    <p class="zodiac__name">Дева</p>
+                  </div><span class="star__plus">+</span>
+                  <div class="star__zodiac zodiac"><i class="fico fico-deva"></i>
+                    <p class="zodiac__name">Дева</p>
+                  </div>
+                </div>
+              </div>
+              <div class="star">
+                <div class="star__wrap-photo"><img src="img/star_4.png" alt="Мишель Обама&lt;br&gt; и Барак Обама"/></div>
+                <div class="star__info">
+                  <p class="star__name title">Мишель Обама<br> и Барак Обама</p>
+                  <p class="star__text">Барак и Мишель Обама по праву считаются одной из самых известных пар в политическом социуме, но их знаки Зодиака несовместимы. </p>
+                </div>
+                <div class="star__bottom">
+                  <div class="star__zodiac zodiac"><i class="fico fico-deva"></i>
+                    <p class="zodiac__name">Дева</p>
+                  </div><span class="star__plus">+</span>
+                  <div class="star__zodiac zodiac"><i class="fico fico-deva"></i>
+                    <p class="zodiac__name">Дева</p>
+                  </div>
+                </div>
+              </div>
+              <div class="star">
+                <div class="star__wrap-photo"><img src="img/star_4.png" alt="Мишель Обама&lt;br&gt; и Барак Обама"/></div>
+                <div class="star__info">
+                  <p class="star__name title">Мишель Обама<br> и Барак Обама</p>
+                  <p class="star__text">Барак и Мишель Обама по праву считаются одной из самых известных пар в политическом социуме, но их знаки Зодиака несовместимы. </p>
+                </div>
+                <div class="star__bottom">
+                  <div class="star__zodiac zodiac"><i class="fico fico-deva"></i>
+                    <p class="zodiac__name">Дева</p>
+                  </div><span class="star__plus">+</span>
+                  <div class="star__zodiac zodiac"><i class="fico fico-deva"></i>
+                    <p class="zodiac__name">Дева</p>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+    </section>
+    <section class="materials" id="materials">
+      <div class="container">
+        <h2 class="materials__title title fzM">Что вы получаете в&nbsp;Гороскопе совместимости?</h2>
+        <ul class="materials__list list-m">
+          <li class="list-m__item">Таблицу совместимости планет и понятную расшифровку</li>
+          <li class="list-m__item">Диаграмму совместимости по 3-м ключевым сферам: сексуальность, романтика, дружеские отношения</li>
+          <li class="list-m__item">Детальную трактовку взаимных аспектов</li>
+        </ul>
+        <div class="materials__wrap">
+          <p class="materials__ttl title">Благодаря этой информации<br/>вы сможете:</p>
+          <ul class="materials__list-r list-r">
+            <li class="list-r__item">Понять, насколько партнер подходит вам</li>
+            <li class="list-r__item">Узнаете причины возможных разногласий</li>
+            <li class="list-r__item">Спрогнозировать будущее ваших отношений</li>
+          </ul><a class="materials__btn btn js-scroll title" href="#form">Получить гороскоп<i class="fico fico-arrowBtn"></i></a>
+          <div class="materials__photo"><img class="materials__img" src="img/result.png" alt="result"/>
+            <div class="materials__price price">
+              <div class="price__wrap"><span class="price__val">$</span><span class="price__num">5</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews" id="reviews">
+      <div class="container">
+        <h2 class="reviews__title title fzBig">Отзывы *</h2>
+        <div class="reviews__slider js-reviews-slider">
+              <div class="review review--odd">
+                <div class="review__left">
+                  <div class="review__wrap-photo"><img class="review__photo" src="img/review_1.png" alt="photo"/></div>
+                  <div class="review__info">
+                    <p class="review__name title">Алина Сергеева</p>
+                    <p class="review__age">Астролог,  47 лет</p>
+                  </div>
+                </div>
+                <div class="review__right"><i class="fico fico-mark"></i>
+                  <p class="review__text">Как человек, который давно интересуется астрологией могу сказать что в Астромикс очень серьезно отнеслись к расчетам натальной карты. Чувствуется профессионализм. Желаю создателям успеха и жду с нетерпением новостей.</p>
+                </div>
+              </div>
+              <div class="review review--even">
+                <div class="review__left">
+                  <div class="review__wrap-photo"><img class="review__photo" src="img/review_2.png" alt="photo"/></div>
+                  <div class="review__info">
+                    <p class="review__name title">Иллона</p>
+                    <p class="review__age">23 года</p>
+                  </div>
+                </div>
+                <div class="review__right"><i class="fico fico-mark"></i>
+                  <p class="review__text">Прочитала много интересного из гороскопа. Были вещи которые прям в точку, лучше поняла почему отношения не клеились и постоянно были ссоры с парнем. </p>
+                </div>
+              </div>
+              <div class="review review--odd">
+                <div class="review__left">
+                  <div class="review__wrap-photo"><img class="review__photo" src="img/review_3.png" alt="photo"/></div>
+                  <div class="review__info">
+                    <p class="review__name title">Арсен Симонян</p>
+                    <p class="review__age">ИТ фрилансер, 32 года</p>
+                  </div>
+                </div>
+                <div class="review__right"><i class="fico fico-mark"></i>
+                  <p class="review__text">7 лет просидел на госслужбе и дорос до мелкого начальника. Работу ненавидел - ходишь как на военную службу. Хотелось что-то поменять, но очень боялся потерять стабильность (как многие Тельцы), а по натальной карте мне нужна работа со свободным графиком (много в Стрельце планет) Поэтому все же рискнул и ушел во фриланс, чувствую себя гораздо счастливее. </p>
+                </div>
+              </div>
+              <div class="review review--even">
+                <div class="review__left">
+                  <div class="review__wrap-photo"><img class="review__photo" src="img/review_4.png" alt="photo"/></div>
+                  <div class="review__info">
+                    <p class="review__name title">Маша Власенко</p>
+                    <p class="review__age">27 лет</p>
+                  </div>
+                </div>
+                <div class="review__right"><i class="fico fico-mark"></i>
+                  <p class="review__text">Часто ловила себя на мысли что гороскопы о Рыбах совсем не про меня. На Астромиксе в астрологическом отчете прочитала что у меня больше проявлены черты Водолея. Когда разбираешь себя не только по солнечному знаку, а по всем планетам  - узнаешь себя намного лучше. </p>
+                </div>
+              </div>
+              <div class="review review--odd">
+                <div class="review__left">
+                  <div class="review__wrap-photo"><img class="review__photo" src="img/review_5.png" alt="photo"/></div>
+                  <div class="review__info">
+                    <p class="review__name title">Ярослав Самуров</p>
+                    <p class="review__age">36 лет</p>
+                  </div>
+                </div>
+                <div class="review__right"><i class="fico fico-mark"></i>
+                  <p class="review__text">Луна в Скорпионе - это что-то ))) У моего сынишки такая взрывная комбинация. Долго с женой не могли понять как бороться с его импульсивностью. Астромикс “открыл глаза” на ранее неочевидные решения. Астрология работает!</p>
+                </div>
+              </div>
+              <div class="review review--even">
+                <div class="review__left">
+                  <div class="review__wrap-photo"><img class="review__photo" src="img/review_6.png" alt="photo"/></div>
+                  <div class="review__info">
+                    <p class="review__name title">Валерия Когот</p>
+                    <p class="review__age">Директор, 29 лет</p>
+                  </div>
+                </div>
+                <div class="review__right"><i class="fico fico-mark"></i>
+                  <p class="review__text">Очень понятный астрологический прогноз. Использую для планирования важных деловых встреч на работе. Хвастаться результатами пока не буду, чтоб не сглазить)</p>
+                </div>
+              </div>
+              <div class="review review--odd">
+                <div class="review__left">
+                  <div class="review__wrap-photo"><img class="review__photo" src="img/review_7.png" alt="photo"/></div>
+                  <div class="review__info">
+                    <p class="review__name title">Джаверия Самиляева</p>
+                    <p class="review__age">38 лет</p>
+                  </div>
+                </div>
+                <div class="review__right"><i class="fico fico-mark"></i>
+                  <p class="review__text">Мне понравился гороскоп профессий и таланов. Конечно, хотелось бы более широкий список, но даже из перечисленных можно понять направление. И уже сейчас вижу что образование для дочери подобрали правильно, в свое время прислушалась к интуиции.</p>
+                </div>
+              </div>
+              <div class="review review--even">
+                <div class="review__left">
+                  <div class="review__wrap-photo"><img class="review__photo" src="img/review_8.png" alt="photo"/></div>
+                  <div class="review__info">
+                    <p class="review__name title">Виктор Абдулаев</p>
+                    <p class="review__age">43 года</p>
+                  </div>
+                </div>
+                <div class="review__right"><i class="fico fico-mark"></i>
+                  <p class="review__text">Самый удобный астропрогноз. Без лишней воды, открыл посмотрел картинки и диаграмму - запланировал свою неделю. Кто бы как не относился к астрологии, но я себя чувствую гораздо увереннее в дни, когда у меня удачные астрологические аспекты.</p>
+                </div>
+              </div>
+        </div>
+        <p class="reviews__note">*Отзывы являются личным мнением каждого клиента и не несут гарантии результата</p>
+      </div>
+    </section>
+    <section class="faq">
+      <div class="container">
+        <div class="faq__sun sun"><img class="sun__img" src="img/svg/sun.svg" alt="sun"/></div>
+        <h2 class="faq__title title fzBig">Ответы на частые вопросы</h2>
+        <div class="faq__list js-accordeon">
+              <div class="question">
+                <div class="question__top js-btn-accordeon">
+                  <div class="question__left">
+                    <div class="question__ico"><span>?</span></div>
+                    <h2 class="question__title title"><span>Какие данные нужны для расчета натальной карты?</span></h2>
+                  </div><i class="fico fico-arrowFaq"></i>
+                </div>
+                <div class="question__bottom js-info-accordeon">
+                  <p class="question__text">Для создания вашей натальной карты необходимы следующие данные:</p>
+                  <ul class="question__list list">
+                    <li class="list__item">имя</li>
+                    <li class="list__item">пол</li>
+                    <li class="list__item">дата рождения</li>
+                    <li class="list__item">время рождения</li>
+                    <li class="list__item">место рождения</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="question">
+                <div class="question__top js-btn-accordeon">
+                  <div class="question__left">
+                    <div class="question__ico"><span>?</span></div>
+                    <h2 class="question__title title"><span>Я не знаю точное время своего рождения</span></h2>
+                  </div><i class="fico fico-arrowFaq"></i>
+                </div>
+                <div class="question__bottom js-info-accordeon">
+                  <p class="question__text">Если вы не знаете точного времени рождения - укажите среднее значение. Например, если вы родился вечером, с 18 до 22 часов, введите среднее значение - 20:00.</p>
+                </div>
+              </div>
+              <div class="question">
+                <div class="question__top js-btn-accordeon">
+                  <div class="question__left">
+                    <div class="question__ico"><span>?</span></div>
+                    <h2 class="question__title title"><span>Я не могу найти свой город в списке</span></h2>
+                  </div><i class="fico fico-arrowFaq"></i>
+                </div>
+                <div class="question__bottom js-info-accordeon">
+                  <p class="question__text">Если вы не нашли в нашем списке нужного города, можно указать ближайший к месту рождения населенный пункт. При этом желательно, чтобы он находился на расстоянии не более 50 км от места рождения, и обязательно в этом же регионе. Иначе параметры местного времени могут быть определены неверно.</p>
+                </div>
+              </div>
+              <div class="question">
+                <div class="question__top js-btn-accordeon">
+                  <div class="question__left">
+                    <div class="question__ico"><span>?</span></div>
+                    <h2 class="question__title title"><span>Могу ли я получить гороскоп по другому человеку?</span></h2>
+                  </div><i class="fico fico-arrowFaq"></i>
+                </div>
+                <div class="question__bottom js-info-accordeon">
+                  <p class="question__text">Да, вы можете использовать сервис для создания гороскопов и трактовок натальной карты по любому человеку, который вас интересует. Введите данные рождения человека, для которого заказываете гороскоп. Узнавайте больше о своей семье, друзьях и коллегах.</p>
+                </div>
+              </div>
+              <div class="question">
+                <div class="question__top js-btn-accordeon">
+                  <div class="question__left">
+                    <div class="question__ico"><span>?</span></div>
+                    <h2 class="question__title title"><span>Как купить пакет с гороскопами?</span></h2>
+                  </div><i class="fico fico-arrowFaq"></i>
+                </div>
+                <div class="question__bottom js-info-accordeon">
+                  <p class="question__text">Для покупки гороскопов:</p>
+                  <ul class="question__list list">
+                    <li class="list__item">выберите пакет</li>
+                    <li class="list__item">заполните данные рождения в форме</li>
+                    <li class="list__item">выберите удобный способ оплаты</li>
+                    <li class="list__item">внесите платежные данные</li>
+                    <li class="list__item">подтвердите платеж</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="question">
+                <div class="question__top js-btn-accordeon">
+                  <div class="question__left">
+                    <div class="question__ico"><span>?</span></div>
+                    <h2 class="question__title title"><span>Какие возможны способы оплаты?</span></h2>
+                  </div><i class="fico fico-arrowFaq"></i>
+                </div>
+                <div class="question__bottom js-info-accordeon">
+                  <p class="question__text">На нашем сайте вы можете выбрать следующие способы оплаты:</p>
+                  <ul class="question__list list">
+                    <li class="list__item">картами VISA/Mastercard</li>
+                    <li class="list__item">c мобильного счета операторов (доступно для РФ)</li>
+                    <li class="list__item">WebMoney, YandexMoney, Qiwi, Advcash.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="question">
+                <div class="question__top js-btn-accordeon">
+                  <div class="question__left">
+                    <div class="question__ico"><span>?</span></div>
+                    <h2 class="question__title title"><span>Как я получу готовый гороскоп?</span></h2>
+                  </div><i class="fico fico-arrowFaq"></i>
+                </div>
+                <div class="question__bottom js-info-accordeon">
+                  <p class="question__text">Мы отправим гороскопы (согласно выбранного вами пакета) в pdf формате на указанную вами электронную почту.</p>
+                </div>
+              </div>
+              <div class="question">
+                <div class="question__top js-btn-accordeon">
+                  <div class="question__left">
+                    <div class="question__ico"><span>?</span></div>
+                    <h2 class="question__title title"><span>Бывают ли одинаковые натальные карты у двух людей?</span></h2>
+                  </div><i class="fico fico-arrowFaq"></i>
+                </div>
+                <div class="question__bottom js-info-accordeon">
+                  <p class="question__text">Ваша карта уникальна и похожей не будет по крайней мере в ближайшие десятки тысяч лет. Поэтому никто другой не способен реализовать ваш потенциал лучше вас. Те энергии планет которые даны вам от рождения заложили именно ваше предназначение и стартовые условия.</p>
+                </div>
+              </div>
+              <div class="question">
+                <div class="question__top js-btn-accordeon">
+                  <div class="question__left">
+                    <div class="question__ico"><span>?</span></div>
+                    <h2 class="question__title title"><span>Из чего состоит натальная карта?</span></h2>
+                  </div><i class="fico fico-arrowFaq"></i>
+                </div>
+                <div class="question__bottom js-info-accordeon">
+                  <p class="question__text">В натальной карте присутствуют следующие элементы: 12 знаков зодиака, 12 домов и 10 планет (не считая астероидов и фиктивных планет - которые являются важными расчетными точками в гороскопе). В зависимости от расположения, планеты образуют между собой связи - аспекты. В натальной карте их делят на гармоничные и напряженные. Все указанные элементы образуют сотни и даже тысячи комбинаций. Гороскопы Астромикс разъяснят что означают все эти переплетения планет, знаков и домов в вашей натальной карте.</p>
+                </div>
+              </div>
+              <div class="question">
+                <div class="question__top js-btn-accordeon">
+                  <div class="question__left">
+                    <div class="question__ico"><span>?</span></div>
+                    <h2 class="question__title title"><span>Что означают планеты в гороскопе?</span></h2>
+                  </div><i class="fico fico-arrowFaq"></i>
+                </div>
+                <div class="question__bottom js-info-accordeon">
+                  <p class="question__text">Разумеется значение планет нельзя уместить в пару предложений. Но если обобщить, некоторые из них можно описать так:</p>
+                  <ul class="question__list list">
+                    <li class="list__item">Солнце является ядром, личностным центром и истинной сутью жизни.</li>
+                    <li class="list__item">Луна выступает центром психической энергии.</li>
+                    <li class="list__item">Меркурий – расскажет о вашем способе мышления и работе с потоком информации.</li>
+                    <li class="list__item">Венера – ассоциируется с проявлением любви, чувственной сферы, является точкой наслаждения и привлекательности. </li>
+                    <li class="list__item">Марс – олицетворяет собой энергию действия.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="question">
+                <div class="question__top js-btn-accordeon">
+                  <div class="question__left">
+                    <div class="question__ico"><span>?</span></div>
+                    <h2 class="question__title title"><span>Что такое ASC (Асцендент)?</span></h2>
+                  </div><i class="fico fico-arrowFaq"></i>
+                </div>
+                <div class="question__bottom js-info-accordeon">
+                  <p class="question__text">Асцендент расскажет об особенностях внешности, о том как окружающие нас воспринимают и какое первое впечатление мы производим на других людей. Анализируя Асцендент также можно узнать о социальных и материальных задачах личности.</p>
+                </div>
+              </div>
+              <div class="question">
+                <div class="question__top js-btn-accordeon">
+                  <div class="question__left">
+                    <div class="question__ico"><span>?</span></div>
+                    <h2 class="question__title title"><span>Что означают Южный и Северный узел?</span></h2>
+                  </div><i class="fico fico-arrowFaq"></i>
+                </div>
+                <div class="question__bottom js-info-accordeon">
+                  <p class="question__text">Лунные узлы в гороскопе — это фиктивные точки, которые делят на: Южный и Северный. Южный лунный узел в гороскопе указывает на то, что уже было наработано человеком в прошлых воплощениях, а Северный лунный узел - на задачи человека в этом воплощении.</p>
+                </div>
+              </div>
+              <div class="question">
+                <div class="question__top js-btn-accordeon">
+                  <div class="question__left">
+                    <div class="question__ico"><span>?</span></div>
+                    <h2 class="question__title title"><span>Как мне использовать астрологический прогноз?</span></h2>
+                  </div><i class="fico fico-arrowFaq"></i>
+                </div>
+                <div class="question__bottom js-info-accordeon">
+                  <p class="question__text">В нашем прогнозе содержится календарь с указанием удачного и напряженного влияния астрологических аспектов на различные сферы вашей жизни. Другими словами, если вы запланировали важную встречу в день, отмеченный в прогнозе как удачный - ваши шансы на успех значительно повышаются.</p>
+                </div>
+              </div>
+              <div class="question">
+                <div class="question__top js-btn-accordeon">
+                  <div class="question__left">
+                    <div class="question__ico"><span>?</span></div>
+                    <h2 class="question__title title"><span>Таланты и профессии тоже определяются астрологией?</span></h2>
+                  </div><i class="fico fico-arrowFaq"></i>
+                </div>
+                <div class="question__bottom js-info-accordeon">
+                  <p class="question__text">Анализируя вашу натальную карту можно выявить те способности и особенности характера, которыми вас наделили с рождения. В Гороскопе Профессий описаны те сферы, которые наилучшим образом соответствуют вашему призванию. Но если вы уже преуспели и получаете удовольствие от работы - значит вы себя нашли;)</p>
+                </div>
+              </div>
+        </div>
+        <div class="faq__bottom">
+          <p class="faq__text">Если у вас остались вопросы по работе сервиса - пишите нам на электронную почту</p><a class="faq__link title" href="mailto:q@astromix.net">q@astromix.net</a>
+        </div>
+      </div>
+    </section>
+    <section class="banner">
+      <div class="container">
+        <h2 class="banner__title title">Постройте свои счасталивые отношения с&nbsp;Любовным гороскопом</h2><a class="banner__btn btn js-scroll" href="#">Получить гороскоп<i class="fico fico-arrowBtn"></i></a>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrap">
+          <div class="footer__left footer__column">
+            <div class="footer__logo"><img src="img/svg/logo.svg" alt="Astromix"/></div>
+            <p class="footer__copyright copyright">Astromix © 2018 – 2020</p>
+          </div>
+          <div class="footer__links links">
+            <div class="links__col"><a class="links__item" href="term-of-use.html">Пользовательское соглашение</a><a class="links__item" href="privacy-policy.html">Политика конфиденциальности</a><a class="links__item" href="cookies-policy.html">Использование cookies</a></div>
+          </div>
+          <div class="footer__contacts contacts footer__column"><a class="contacts__email title" href="mailto:info@astromix.net">info@astromix.net</a></div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
